@@ -1,28 +1,151 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Ovo');
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    font-family: 'Ovo', serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#pagewrap {
+  width: 980px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#content {
+  width: 600px;
+  float: left;
 }
 
-.App-title {
-  font-size: 1.5em;
+
+@media screen and (max-width: 980px) {
+
+    #pagewrap {
+        width: 95%;
+    }
+
+    #content {
+        width: 60%;
+        padding: 3% 4%;
+    }
+
+    #sidebar {
+        width: 30%;
+    }
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
+
 }
 
-.App-intro {
-  font-size: large;
+
+@media screen and (max-width: 650px) {
+
+    #header {
+        height: auto;
+    }
+
+    #searchform {
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+
+    #main-nav {
+        position: static;
+    }
+
+    #site-logo {
+        margin: 15px 100px 5px 0;
+        position: static;
+    }
+
+    #site-description {
+        margin: 0 0 15px;
+        position: static;
+    }
+
+    #content {
+        width: auto;
+        float: none;
+        margin: 20px 0;
+    }
+
+    #sidebar {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+@media screen and (max-width: 650px) {
+
+    #header {
+        height: auto;
+    }
+
+    #searchform {
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+
+    #main-nav {
+        position: static;
+    }
+
+    #site-logo {
+        margin: 15px 100px 5px 0;
+        position: static;
+    }
+
+    #site-description {
+        margin: 0 0 15px;
+        position: static;
+    }
+
+    #content {
+        width: auto;
+        float: none;
+        margin: 20px 0;
+    }
+
+    #sidebar {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+}
+
+
+/*Navbar*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+
+li a {
+    display: block;
+    color: #d4d4d4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #ffffff;
 }

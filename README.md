@@ -4,6 +4,10 @@
 
 link to demo: https://react-responsive-landing.herokuapp.com/
 
+##References
+Structure: https://dribbble.com/shots/3551039-Bueno-co/attachments/790622
+Biography component: https://dribbble.com/shots/3843415-Section-32-Homepage/attachments/870514
+
 ## Folder Structure
 
 ```
