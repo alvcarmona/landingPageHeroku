@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import NavbarComponent from './components/navbarComponent'
 import FormComponent from './components/formComponent'
 import BiographyComponent from './components/biographyComponent'
@@ -17,8 +16,8 @@ class App extends Component {
                         <NavbarComponent/>
                     </header>
                         <DoubleColComponent/>
+                    <DisplayComponent/>
                         <BiographyComponent/>
-                        <DisplayComponent/>
                         <FormComponent/>
                 </div>
             </div>

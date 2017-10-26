@@ -15,7 +15,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 600px;
   float: left;
 }
+/*display*/
+.display{
+    padding-right: 1%;
+}
+/*biography*/
 
+img.biopic{
+    width:85%;
+}
 
 /*Navbar*/
 
@@ -41,6 +49,12 @@ li a {
     text-decoration: none;
 }
 
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #ffffff;
@@ -62,11 +76,19 @@ li a:hover {
 .column_1_of_2{
     width:50%;
 }
+.column_1_of_3 {
+    width: 32.3%;
+}
 
 
 
+/*Contact form */
 
 
+
+label, input {
+    float:none;
+}
 
 
 
@@ -135,6 +157,12 @@ li a:hover {
 
     .column_1_of_2 {
         width: 100%;
+    }
+    .column_1_of_3 {
+        width: 100%;
+    }
+    .col {
+        margin: 1% 0 1% 0%;
     }
 }
 
