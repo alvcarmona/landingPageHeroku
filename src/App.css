@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Ovo');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
-    font-family: 'Ovo', serif;
+    font-family: 'Merriweather', serif;
 }
 
 #pagewrap {
@@ -14,110 +14,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #content {
   width: 600px;
   float: left;
-}
-
-
-@media screen and (max-width: 980px) {
-
-    #pagewrap {
-        width: 95%;
-    }
-
-    #content {
-        width: 60%;
-        padding: 3% 4%;
-    }
-
-    #sidebar {
-        width: 30%;
-    }
-    #sidebar .widget {
-        padding: 8% 7%;
-        margin-bottom: 10px;
-    }
-
-}
-
-
-@media screen and (max-width: 650px) {
-
-    #header {
-        height: auto;
-    }
-
-    #searchform {
-        position: absolute;
-        top: 5px;
-        right: 0;
-    }
-
-    #main-nav {
-        position: static;
-    }
-
-    #site-logo {
-        margin: 15px 100px 5px 0;
-        position: static;
-    }
-
-    #site-description {
-        margin: 0 0 15px;
-        position: static;
-    }
-
-    #content {
-        width: auto;
-        float: none;
-        margin: 20px 0;
-    }
-
-    #sidebar {
-        width: 100%;
-        float: none;
-        margin: 0;
-    }
-
-}
-
-
-@media screen and (max-width: 650px) {
-
-    #header {
-        height: auto;
-    }
-
-    #searchform {
-        position: absolute;
-        top: 5px;
-        right: 0;
-    }
-
-    #main-nav {
-        position: static;
-    }
-
-    #site-logo {
-        margin: 15px 100px 5px 0;
-        position: static;
-    }
-
-    #site-description {
-        margin: 0 0 15px;
-        position: static;
-    }
-
-    #content {
-        width: auto;
-        float: none;
-        margin: 20px 0;
-    }
-
-    #sidebar {
-        width: 100%;
-        float: none;
-        margin: 0;
-    }
-
 }
 
 
@@ -149,3 +45,138 @@ li a {
 li a:hover {
     background-color: #ffffff;
 }
+
+
+/*Responsive Columns*/
+.col {
+    display: block;
+    float:left;
+}
+.col:first-child { margin-left: 0; }
+
+.responsive {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+.column_1_of_2{
+    width:50%;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+
+    #pagewrap {
+        width: 95%;
+    }
+
+    #content {
+        width: 60%;
+        padding: 3% 4%;
+    }
+
+    #sidebar {
+        width: 30%;
+    }
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
+    .DoubleColComponent{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    #header {
+        height: auto;
+    }
+
+    #searchform {
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+
+    #main-nav {
+        position: static;
+    }
+
+    #site-logo {
+        margin: 15px 100px 5px 0;
+        position: static;
+    }
+
+    #site-description {
+        margin: 0 0 15px;
+        position: static;
+    }
+
+    #content {
+        width: auto;
+        float: none;
+        margin: 20px 0;
+    }
+
+    #sidebar {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    .column_1_of_2 {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #header {
+        height: auto;
+    }
+
+    #searchform {
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+
+    #main-nav {
+        position: static;
+    }
+
+    #site-logo {
+        margin: 15px 100px 5px 0;
+        position: static;
+    }
+
+    #site-description {
+        margin: 0 0 15px;
+        position: static;
+    }
+
+    #content {
+        width: auto;
+        float: none;
+        margin: 20px 0;
+    }
+
+    #sidebar {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+}
+
+

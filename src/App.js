@@ -4,6 +4,8 @@ import NavbarComponent from './components/navbarComponent'
 import FormComponent from './components/formComponent'
 import BiographyComponent from './components/biographyComponent'
 import DisplayComponent from './components/DisplayComponent'
+import DoubleColComponent from './components/doubleColComponent'
+
 import './App.css';
 
 class App extends Component {
@@ -14,11 +16,10 @@ class App extends Component {
                     <header id="header">
                         <NavbarComponent/>
                     </header>
-                    <div id="content">
+                        <DoubleColComponent/>
                         <BiographyComponent/>
                         <DisplayComponent/>
                         <FormComponent/>
-                    </div>
                 </div>
             </div>
         );
