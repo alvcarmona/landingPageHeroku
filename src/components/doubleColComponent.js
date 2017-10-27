@@ -3,12 +3,13 @@ import React, {Component} from 'react';
 class DoubleColComponent extends Component {
     render() {
         return (
-            <div className="responsive grid">
+            <div classname="section">
+            <div className="responsive grid ">
                 <div className="col column_1_of_2">
                     <h1>Its not a charity</h1>
-                    <h1>Bueno is about helping good people do good things</h1>
+                    <h1 className="secondaryTextColor" >Bueno is about helping good people do good things</h1>
                 </div>
-                <div className="col column_1_of_2">
+                <div className="col column_1_of_2 secondaryTextColor" >
                     <p>
                         What is Lorem Ipsum?
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -34,6 +35,7 @@ class DoubleColComponent extends Component {
                         in their exact original form, accompanied by English versions from the 1914 translation by H.
                         Rackham.</p>
                 </div>
+            </div>
             </div>
         );
     }

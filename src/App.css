@@ -15,6 +15,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 600px;
   float: left;
 }
+
+.section{
+    padding-top: 5%;
+   padding-bottom: 3%;
+}
+
 /*display*/
 .display{
     padding-right: 1%;
@@ -22,28 +28,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*biography*/
 
 img.biopic{
-    width:85%;
+    width:65%;
+    margin-left: 10%;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    -webkit-box-shadow: 10px 9px 0px 2px rgba(143,109,40,1);
+    -moz-box-shadow: 10px 9px 0px 2px rgba(143,109,40,1);
+    box-shadow: 10px 9px 0px 2px rgba(143,109,40,1);
 }
+
+.secondaryTextColor{
+   color: darkgrey;
+    opacity: 0.5;
+    font-weight: lighter;
+}
+
 
 /*Navbar*/
 
-
+nav{
+    margin-bottom: 5%;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
 }
 
 li {
     float: right;
+    font-weight: lighter;
 }
-
+.left{
+    font-weight: bolder;
+    float:left;
+}
 
 li a {
     display: block;
-    color: #d4d4d4;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -71,7 +96,6 @@ li a:hover {
 .responsive {
     clear: both;
     padding: 0px;
-    margin: 0px;
 }
 .column_1_of_2{
     width:50%;
@@ -86,12 +110,96 @@ li a:hover {
 
 
 
-label, input {
-    float:none;
+fieldset{
+    position: relative;
+    border: none;
+}
+
+form {
+    width: 70%;
+    margin: 55px 40px;
+}
+label{
+    top: 18px;
+    color: rgba(0, 0, 0, 0.3);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+input:focus ~ label {
+    color: black;
 }
 
 
+input:focus ~ label,
+input:valid ~ label {
+    top: 0;
+    transform: scale(0.6, 0.6);
+}
 
+input {
+    font-size: 20px;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid;
+    border-color: darkgrey;
+    margin-top: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.after {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, black 50%, transparent 50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all 0.6s ease;
+}
+
+input:focus ~ .after {
+    background-position: 0 0;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    font-family: system-ui, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding: 2px 10px;
+    color: rgba(0, 0, 0, 0.4);
+    background: white;
+    border: none;
+    background: linear-gradient(to right, black 50%, transparent 50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all 0.6s ease;
+}
+
+button:before {
+    position: absolute;
+    content: "Submit";
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    display: block;
+    background-color: white;
+}
+
+button:active,
+button:focus,
+button:hover {
+    outline: none;
+    background-position: 0 0;
+    color: black;
+}
 
 @media screen and (max-width: 980px) {
 
@@ -131,6 +239,7 @@ label, input {
 
     #main-nav {
         position: static;
+        color:white;
     }
 
     #site-logo {

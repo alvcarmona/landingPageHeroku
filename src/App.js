@@ -15,10 +15,11 @@ class App extends Component {
                     <header id="header">
                         <NavbarComponent/>
                     </header>
-                        <DoubleColComponent/>
+                    <DoubleColComponent />
+                    <DisplayComponent />
                     <DisplayComponent/>
-                        <BiographyComponent/>
-                        <FormComponent/>
+                    <BiographyComponent />
+                    <FormComponent/>
                 </div>
             </div>
         );
