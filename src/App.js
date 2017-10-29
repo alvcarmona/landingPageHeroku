@@ -4,6 +4,7 @@ import FormComponent from './components/formComponent'
 import BiographyComponent from './components/biographyComponent'
 import DisplayComponent from './components/DisplayComponent'
 import DoubleColComponent from './components/doubleColComponent'
+import FrontpageComponent from './components/frontpageComponent'
 
 import './App.css';
 
@@ -15,6 +16,7 @@ class App extends Component {
                     <header id="header">
                         <NavbarComponent/>
                     </header>
+                    <FrontpageComponent/>
                     <DoubleColComponent />
                     <DisplayComponent />
                     <DisplayComponent/>

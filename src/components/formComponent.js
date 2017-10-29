@@ -26,7 +26,7 @@ class FormComponent extends Component {
                         <fieldset>
                         <label>
                             Go ahead. We're all ears.
-                            <input type="text" name="comment"/>
+                            <input className="bigtextbox" type="text" name="comment"/>
                         </label>
                         </fieldset>
 
@@ -36,7 +36,7 @@ class FormComponent extends Component {
                     </form>
                 </div>
                 <div className="col column_1_of_2">
-                    <img src={pic5} alt=""/>
+                    <img src={pic5} className="lazyload" alt=""/>
                 </div>
             </div>
         );
