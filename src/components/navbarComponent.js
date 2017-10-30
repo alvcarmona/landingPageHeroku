@@ -6,12 +6,12 @@ class NavbarComponent extends Component {
         return (
             <div className="Navbar">
                 <div className="topnav" id="myTopnav">
-                    <a  className="left" href="#">Logo.</a>
+                    <a className="left">Logo.</a>
                     <a className="right-align"></a>
-                    <a className="right-align" href="#home">Home</a>
-                    <a className="right-align" href="#news">News</a>
                     <a className="right-align" href="#contact">Contact</a>
+                    <a className="right-align" href="#display">Display</a>
                     <a className="right-align" href="#about">About</a>
+                    <a className="right-align" href="#home">Home</a>
                     <a  href="javascript:void(0);" className="icon right-align" onClick={() => {
                         let x = document.getElementById("myTopnav");
                         if (x.className === "topnav") {

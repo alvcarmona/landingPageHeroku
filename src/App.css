@@ -10,13 +10,29 @@ p{
     margin-bottom: 10px;
 }
 
+
 .secondaryTextColor{
-    color: darkgrey;
+    color: #4e4e4e;
     opacity: 0.5;
     font-weight: lighter;
 }
 
+a:link {
+    text-decoration: none;
+}
 
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
 #pagewrap {
   width: 980px;
   margin: 0 auto;
@@ -39,6 +55,7 @@ p{
     float: right;
     width: 75%;
     margin-bottom: 10%;
+    margin-right: -10%;
 }
 
 
@@ -51,6 +68,23 @@ p{
     padding-right: 1%;
     bottom: 0px;
 }
+.display-element-container{
+
+}
+
+.display-element-continent{
+    position: inherit;
+    bottom: 0;
+}
+
+.display-text{
+    padding-right: 15px;
+    padding-left: 10px;
+}
+.display-link{
+   padding-left: 100px;
+}
+
 /*biography*/
 
 img.biopic{
@@ -72,7 +106,10 @@ img.biopic{
     bottom: 0px;
 }
 
-
+#biography-title{
+    margin-top: 20%;
+    margin-left: -30%;
+}
 
 /*Navbar*/
 /* Add a black background color to the top navigation */
@@ -147,6 +184,7 @@ form {
     margin: 55px 40px;
 }
 label{
+    position: absolute;
     top: 18px;
     color: rgba(0, 0, 0, 0.3);
     transform-origin: left;
@@ -154,9 +192,8 @@ label{
 }
 
 input:focus ~ label {
-    color: black;
+    color: rgba(0, 0, 0, 0.98);
 }
-
 
 input:focus ~ label,
 input:valid ~ label {
@@ -167,9 +204,7 @@ input:valid ~ label {
 input {
     font-size: 20px;
     width: 100%;
-    border:none;
-    border-bottom: 1px solid;
-    border-color: darkgrey;
+    border: none;
     margin-top: 10px;
 }
 
@@ -180,7 +215,7 @@ input:focus {
 .after {
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, black 50%, transparent 50%);
+    background: linear-gradient(to right, #000000 50%, transparent 50%);
     background-color: rgba(0, 0, 0, 0.3);
     background-size: 200% 100%;
     background-position: 100% 0;
@@ -195,13 +230,14 @@ button {
     position: relative;
     width: 100%;
     font-size: 20px;
+    font-family: system-ui, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     margin-top: 20px;
     padding: 2px 10px;
     color: rgba(0, 0, 0, 0.4);
     background: white;
     border: none;
-    background: linear-gradient(to right, black 50%, transparent 50%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.96) 50%, transparent 50%);
     background-color: rgba(0, 0, 0, 0.3);
     background-size: 200% 100%;
     background-position: 100% 0;
@@ -224,7 +260,7 @@ button:focus,
 button:hover {
     outline: none;
     background-position: 0 0;
-    color: black;
+    color: #000000;
 }
 
 @media screen and (max-width: 980px) {
@@ -248,6 +284,7 @@ button:hover {
     .DoubleColComponent{
         width: 100%;
     }
+
 }
 
 
@@ -319,6 +356,9 @@ button:hover {
         text-align: left;
     }
 
+    #biography-title{
+        margin-left: 0;
+    }
 
 
 

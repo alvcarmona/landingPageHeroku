@@ -10,6 +10,7 @@ class BiographyComponent extends Component {
                 </div>
                 <div className="col column_1_of_2 bottomContinent">
                     <div className="bottom">
+                        <h1 id="biography-title">Biography</h1>
                     <p>
                         <b>What is Lorem Ipsum?</b>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.

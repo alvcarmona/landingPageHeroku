@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class DoubleColComponent extends Component {
     render() {
         return (
-            <div className="section">
+            <div className="section" id="about">
             <div className="responsive grid ">
                 <div className="col column_1_of_2">
                     <h1>Its not a charity</h1>
