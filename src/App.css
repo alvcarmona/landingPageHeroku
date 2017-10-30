@@ -68,7 +68,7 @@ img.biopic{
 }
 
 .bottom{
-    position: absolute;
+    position: relative;
     bottom: 0px;
 }
 
