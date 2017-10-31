@@ -7,7 +7,7 @@ class DoubleColComponent extends Component {
             <div className="responsive grid ">
                 <div className="col column_1_of_2">
                     <h1>Its not a charity</h1>
-                    <h1 className="secondaryTextColor" >Bueno is about helping good people do good things</h1>
+                    <h2 className="secondaryTextColor" >Bueno is about helping good people do good things</h2>
                 </div>
                 <div className="col column_1_of_2 secondaryTextColor" >
                     <p>

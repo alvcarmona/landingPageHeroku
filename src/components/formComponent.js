@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import pic5 from '../img/eric-barbeau-56714.jpg';
+import arrow from '../img/next.svg';
 
 class FormComponent extends Component {
     render() {
@@ -8,7 +9,7 @@ class FormComponent extends Component {
                 <div className="col column_1_of_2 contactForm">
                     <div className="contactFormChild">
                         <h1>Need a helping hand?</h1>
-                        <h1  className="secondaryTextColor">We are all ears</h1>
+                        <h2  className="secondaryTextColor">We are all ears</h2>
                     </div>
                     <form action="#" >
                         <fieldset>
@@ -27,7 +28,10 @@ class FormComponent extends Component {
                                 <div className="after"></div>
                         </fieldset>
                         <fieldset>
-                            <button>Submit</button>
+                            <button className="submitButton" type="submit">
+                                <span className="icon-form"></span>
+                                <span className="submit-text">Submit</span>
+                            </button>
                         </fieldset>
                     </form>
                 </div>

@@ -10,11 +10,27 @@ p{
     margin-bottom: 10px;
 }
 
+a{
+    font-size: 12px;
+}
 
 .secondaryTextColor{
     color: #4e4e4e;
     opacity: 0.5;
+    font-size: 12px;
     font-weight: lighter;
+}
+
+.paragraphSize{
+    font-size: 12px;
+}
+h1{
+    font-size: 22PX;
+    font-weight: 200;
+}
+h2{
+    font-size: 18px!important;
+    font-weight: 200;
 }
 
 a:link {
@@ -52,20 +68,25 @@ a:active {
 /*** First component***/
 
 .frontPic{
+    position: relative;
     float: right;
     width: 75%;
     margin-bottom: 10%;
     margin-right: -10%;
 }
+.home{
+    position: inherit;
+}
 
 
 /*display*/
 .display-container{
+
     height: 100%;
     position: relative;
 }
 .display{
-    padding-right: 1%;
+    padding: 15px;
     bottom: 0px;
 }
 .display-element-container{
@@ -78,11 +99,7 @@ a:active {
 }
 
 .display-text{
-    padding-right: 15px;
-    padding-left: 10px;
-}
-.display-link{
-   padding-left: 100px;
+    padding-right: 30px;
 }
 
 /*biography*/
@@ -112,6 +129,7 @@ img.biopic{
 }
 
 /*Navbar*/
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: white;
@@ -127,12 +145,18 @@ img.biopic{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 12px;
 }
 .left{
     font-weight: bolder;
     float:left!important;
+    padding-left: 0px!important;
 }
+.left::first-letter {
+    font-size: 150%;
+    color: #4e4e4e;
+}
+
 /* Change the color of links on hover */
 .topnav a:not(:first-child):not:nth-child(2):hover {
     background-color: #ddd;
@@ -163,7 +187,7 @@ img {
     width:50%;
 }
 .column_1_of_3 {
-    width: 32.3%;
+    width: 30%;
 }
 
 
@@ -226,41 +250,25 @@ input:focus ~ .after {
     background-position: 0 0;
 }
 
-button {
-    position: relative;
-    width: 100%;
-    font-size: 20px;
-    font-family: system-ui, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    margin-top: 20px;
-    padding: 2px 10px;
-    color: rgba(0, 0, 0, 0.4);
-    background: white;
-    border: none;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.96) 50%, transparent 50%);
-    background-color: rgba(0, 0, 0, 0.3);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    transition: all 0.6s ease;
+
+.icon-form{
+    background: url(img/next.svg) no-repeat;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 2px 3px 1px 0px;
+    stroke-width:2;
+    color: #dddddd;
 }
 
-button:before {
-    position: absolute;
-    content: "Submit";
-    top: 2px;
-    bottom: 2px;
-    left: 2px;
-    right: 2px;
-    display: block;
+.submitButton{
+    border:none;
     background-color: white;
+    cursor: pointer;
 }
-
-button:active,
-button:focus,
-button:hover {
-    outline: none;
-    background-position: 0 0;
-    color: #000000;
+.submit-text{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 980px) {
